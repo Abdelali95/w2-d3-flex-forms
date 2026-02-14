@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/* FLEXBOX CONTAINER */
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid black;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.box {
+  background-color: lightblue;
+  padding: 20px;
+  width: 100px;
+  text-align: center;
+}
+
+/* INLINE VS BLOCK */
+.inline {
+  background-color: yellow;
+  padding: 5px;
+}
+
+.block {
+  background-color: lightgreen;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+/* FORM */
+.form-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  max-width: 600px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 45%;
+}
+
+.full-width {
+  flex: 1 1 100%;
+}
+
+label {
+  font-weight: bold;
+}
+
+input, button {
+  padding: 8px;
+  font-size: 16px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .form-group {
+    flex: 1 1 100%;
+  }
+}
